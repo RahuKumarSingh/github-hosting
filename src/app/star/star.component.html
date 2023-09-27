@@ -1,0 +1,9 @@
+<div class="star container-sm">
+    <div class="point " *ngFor="let point of starPoints; let i = index" [ngStyle]="getPointStyle(i)"></div>
+</div>
+
+<div  class="container-sm " style="margin-top: 400px; padding-bottom:80px; margin-left: 30px;">
+   
+    <input type="button" value=" Seen More" style="padding: 10px 40px; background-color: grey;">
+    <i class="bi bi-arrow-up-right-circle-fill " style="margin-left: -40px; font-size: 20px;"></i>
+</div>

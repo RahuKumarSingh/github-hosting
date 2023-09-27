@@ -1,0 +1,58 @@
+.star {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform: rotate(-18deg); /* Adjust rotation angle if needed */
+  top: -300px;
+  right: 400px;
+  float: right;
+}
+
+.point {
+  width: 10px;
+  height: 30px;
+  background-color: #e9e8e0; /* Yellow color */
+  position: absolute;
+  top: 85px;
+  left: 95px;
+  transform-origin: 0% 100%;
+  width: -150%;
+  height: 90%;
+}
+
+.point:nth-child(odd) {
+  transform: rotate(36deg);
+}
+
+.point:nth-child(even) {
+  transform: rotate(72deg);
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .star {
+    width: 100px;
+    height: 100px;
+    top: -150px;
+    right: 50px;
+    transform: rotate(-18deg);
+  }
+
+  .point {
+    width: 5px;
+    height: 15px;
+    top: 40px;
+    left: 45px;
+    transform-origin: 0% 100%;
+    width: -150%;
+    height: 70%;
+  }
+
+  .point:nth-child(odd) {
+    transform: rotate(36deg);
+  }
+
+  .point:nth-child(even) {
+    transform: rotate(72deg);
+  }
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500&display=swap');
+
+.container {
+    position: relative;
+  }
+
+/* Default styles for larger screens */
+.black-box {
+    font-family: 'Syne', sans-serif;
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 135px;
+    font-family: Syne;
+    font-weight: 800;
+    line-height: 102.60px;
+    word-wrap: break-word;
+}
+
+.gray-box {
+    font-family: 'Syne', sans-serif;
+    position: absolute;
+    z-index: 1;
+    background: lightgray;
+    width: 100%;
+    left: 18%;
+    right: auto;
+    top: 70px;
+    height: 50vh;
+    opacity: 3;
+    background: #F07E15;
+}
+
+.text2022 {
+    width: 100%;
+    height: 100%;
+    font-size: 135px;
+    font-family: Syne;
+    font-weight: 800;
+    color: white;
+    padding-top: 25px;
+    line-height: 102.60px;
+    word-wrap: break-word;
+}
+
+.textname {
+    right: 0px;
+    position: relative;
+    left: 70%;
+    margin-top: -80px;
+}
+
+.jacket {
+    width: 100%;
+    height: 100%;
+    color: #161615;
+    font-size: 14px;
+    font-family: Work Sans;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.doller {
+    width: 100%;
+    height: 100%;
+    color: #161615;
+    font-size: 14px;
+    font-family: Work Sans;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.green-box {
+    font-family: 'Syne', sans-serif;
+    position: absolute;
+    z-index: 3;
+    width: 35%;
+    left: 80px;
+    top: 220px;
+    height: auto;
+    color: white;
+    font-size: 135px;
+    font-family: Syne;
+    font-weight: 800;
+    line-height: 102.60px;
+    word-wrap: break-word;
+}
+
+.image {
+   
+    position: absolute;
+    z-index: 4;
+    left: 60%;
+    right: auto;
+    width: 40vh;
+    top: -90px;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .black-box{
+      font-family: 'Syne', sans-serif;
+      position: relative;
+      z-index: 2;
+      font-size: 36px;
+      line-height: 1.2;
+      /* text-align: center; */
+      padding: 10px;
+      width: 100%;
+      left: auto;
+      top: 80px;
+    }
+    .gray-box{
+      font-family: 'Syne', sans-serif;
+      position: absolute;
+      z-index: 1;
+      font-size: 36px;
+      line-height: 1.2;
+      /* text-align: center; */
+      padding: 10px;
+      width: 100%;
+      left: 10px;
+      top: auto;
+    }
+    .green-box {
+      font-family: 'Syne', sans-serif;
+      position: absolute;
+      z-index: 3;
+        font-size: 36px;
+        line-height: 1.2;
+        /* text-align: center; */
+        padding: 10px;
+        width: 100%;
+        left: auto;
+        top: 150px;
+    }
+
+    .textname {
+        left: auto;
+        margin-top: 10px;
+    }
+
+    .image {
+      position: absolute;
+      z-index: 4;
+        width: 50%;
+
+        /* max-width: 80%; */
+        height: 30%;
+        top: 0;
+         left:100px; 
+        
+        margin-top: -40px;
+    }
+    .text2022{
+        padding-bottom: 10px;
+      margin-left: 20px;
+      font-size: 36px;
+    }
+}

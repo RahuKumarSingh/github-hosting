@@ -1,0 +1,14 @@
+.footer{
+    color: white; 
+    font-size: 15px; 
+    font-family: Poppins;
+     font-weight: 400; 
+     word-wrap: break-word;
+     background-color: black;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     padding-top: 30px;
+     height: 80px;
+     
+}

@@ -1,0 +1,47 @@
+<div class="card bg-dark text-white" style="overflow: hidden; border-radius:0px ;width: 100%; margin-top:25%;">
+  <img src="./assets/back-image.png" class="w-100 h-100" alt="... ">
+
+  <div class="card-img-overlay " style="margin-left: 100px; top:50px">
+    <div class="card-title " style="color: rgba(255, 255, 255, 0.50);
+    font-size: 20px;
+    font-family: Syne;
+    font-weight: 600;">Newsletter</div>
+    <p class="card-text">Gets news about the articals and updated in your inbox.</p>
+  </div>
+  <div class="card-img-overlay " style="display: flex;  margin-top: 40px; margin-left:600px;">
+
+    <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="form-control" [(ngModel)]="formData['name']" required />
+        <div class="alert alert-danger" *ngIf="contactForm.submitted && contactForm.controls['name'].invalid">
+          Name is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" [(ngModel)]="formData['email']" required
+          email />
+        <div class="alert alert-danger" *ngIf="
+            contactForm.submitted &&
+            (contactForm.controls['email'].invalid || !contactForm.controls['email'].hasError('email'))">
+          Email is required and must be a valid email address.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" class="form-control" [(ngModel)]="formData['message']"
+          required></textarea>
+        <div class="alert alert-danger" *ngIf="contactForm.submitted && contactForm.controls['message'].invalid">
+          Message is required.
+        </div>
+       
+     
+      </div>
+
+      <button type="submit" class="btn btn-dark">Send</button>
+    </form>
+    <div id="intouch">GET <br />IN TOUCH</div>
+  </div>

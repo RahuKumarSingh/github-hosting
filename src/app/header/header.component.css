@@ -1,0 +1,47 @@
+
+.container-fluid {
+background-color: #1A1A1A;
+height: 4rem;
+border-bottom: 1px solid rgb(112, 109, 109)
+}
+
+
+.delivery {
+    border-right: 1px solid #626262;
+    margin-bottom: 70px;
+    padding-right:10px;
+
+
+
+}
+.icon{
+padding-top: 25px; 
+font-size: 20px;
+}
+
+
+@media only screen and (max-width: 525px) {
+    .logo{
+  
+      font-size: 10px;
+    }
+    .login{
+        font-size: 10px;
+       
+       
+    }
+    .icon{
+        font-size: 15px;
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+       
+    }
+   
+  }
+  @media only screen and (max-width: 406px){
+    .follow{
+        display: none;
+    }
+  }
